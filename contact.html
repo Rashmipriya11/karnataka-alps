@@ -5,11 +5,16 @@
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="style-2.css" type="text/css">
+<link rel="stylesheet" href="send.php" type="text/css">
 <script src="js/jquery.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="fav.ico">
+    <link rel="stylesheet" href="send.php">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
 <!-- webfonts -->
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet"> 
@@ -30,6 +35,7 @@
 		      <li class=" simptip-position-bottom simptip-movable" data-tooltip="About"><a class="about" href="about.html"></a></li>
 			  <li class=" simptip-position-bottom simptip-movable" data-tooltip="Teams"><a class="service" href="team.html"></a></li>
 			  <li class=" simptip-position-bottom simptip-movable" data-tooltip="Gallery"><a class="gallery" href="gallery.html"></a></li>
+			  <li class=" simptip-position-bottom simptip-movable" data-tooltip="Testimonial"><a class="client" href="testimonial.html"></a></li>
 			  <li class="active simptip-position-bottom simptip-movable" data-tooltip="Contact"><a class="contact contact-pg" href="contact.html"></a></li>
 			 <div class="clearfix"></div>
 		 </ul>
@@ -47,35 +53,69 @@
 </div>
 <!----->
 <!---start-content---->
-<div class="contact_desc w3layouts">
-		        <div class="container">
-			         <div class="contact-form">
-				  	   <h2>CONTACT US</h2>
-					     <form method="post"  class="left_form">
-					    	<div>
-						    	<span><label>NAME</label></span>
-						    	<span><input name="userName" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						    	<span><label>E-MAIL</label></span>
-						    	<span><input name="userEmail" type="text" class="textbox"></span>
-						    </div>
-						    <div>
-						     	<span><label>Contact Number</label></span>
-						    	<span><input name="userPhone" type="text" class="textbox"></span>
-						    </div>
-					    </form>
-					    <form class="right_form">
-					        <div>					    	
-						    	<span><label>SUBJECT</label></span>
-						    	<span><textarea name="userMsg"> </textarea></span>
-						    </div>
-						   <div>
-						   		<span><input type="submit" value="Submit" class="myButton"></span>
-						  </div>
-					    </form>
+<div class="conatiner">
+      
+
+
+
+
+
+
+    </div>
+
+
+
+
+		       
+	<!-- 			  	 <div class="contact-content-row share2">
+    <div class="form-wrap animated slideInRight ss">
+      <form name="contactform" method="post" action="send.php">
+        <table class="ww">
+        <tr>
+         <td valign="top">
+          <label for="first_name">Full Name </label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="first_name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="email">Email Address </label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="telephone">Telephone Number </label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="telephone" maxlength="30" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="comments">Comments </label>
+         </td>
+         <td valign="top">
+          <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit" class="pq">
+         </td>
+        </tr>
+        </table>
+        </form>
+    </div> -->
+  </div>
+  </div>
+
+				<!-- 	   
 					    <div class="clearfix"></div>
-				  </div>
 				 <div class="content_bottom">
 				 	<div class="company_address">
 				     	<h3>Location</h3>
@@ -83,6 +123,7 @@
 				   		<p>Phone:080-64542646 </p>
 				 	 	<p>Email:   <a href="info@karnataka-alps.com">Info@Karnataka-alps.com</a></p>
 				   		<p>Follow on:  <a href="https://www.facebook.com/KarnatakaAlpsOfficial/">Facebook</a></span>, <span><a href="https://www.youtube.com/channel/UC2__D9a13hm1S4jxviinYtg">Youtube</a></p>
+				     </div>
 				     </div>
 				       <div class="contact_info">
     	 				<h3>Find Us Here</h3>
@@ -93,9 +134,15 @@
 				      <div class="clearfix"></div>
 	                </div>	
 	             </div>  
-</div>
+</div> -->
 <div class="fotter w3-agileits">
 	 <div class="container">
+
+        
+     
+
+
+
 		 <div class="col-md-3 ftr-logo">
 		 <a href="index.html"><img src="images/KarnatakaAl-wht.png" alt=""/></a>
 		 	  <nav class="site-nav">
@@ -109,11 +156,12 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="team.html">Faculty</a></li>
       <li><a href="gallery.html">Program</a></li>
+      <li><a href="testimonial.html">Testimonial</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav><!--eo site-nav-->	
 		 </div>
-		 <div class="col-md-3 address">
+		 <div class="col-md-4 address">
 			 <h4>Address</h4>
 			 <ul class="address-info">
 			     <li><span></span></li>
@@ -126,7 +174,7 @@
 				 <p>Email: <a href="info@karnataka-alps.com">Info@Karnataka-alps.com</a></p></li>
 			 </ul>
 		 </div>
-		 <div class="col-md-6 touch">
+		<!--  <div class="col-md-6 touch">
 			 <h4>Stay in Touch</h4>
 			 <div class="form">
 			 <form>
@@ -140,10 +188,63 @@
 				 <a href="https://www.youtube.com/channel/UC2__D9a13hm1S4jxviinYtg" target="blank"><span class="icon-youtube"> </span></a>
 				 <a href="https://www.instagram.com/karnatakaalps/" target="blank"><span class="icon-instagram"> </span></a>		 
 			 </div>
-		 </div>
+		 </div> -->
+		 <div class="col-md-5">
+		 <div class="contact-content-row share2">
+    <div class="form-wrap animated slideInRight">
+      <form name="contactform" method="post" action="send.php">
+        <table>
+        <tr>
+         <td valign="top">
+          <label for="name">Name*</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="name" maxlength="50" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="email">Email*</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="email" maxlength="80" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="telephone">Telephone*</label>
+         </td>
+         <td valign="top">
+          <input  type="text" name="telephone" maxlength="30" size="30">
+         </td>
+        </tr>
+        <tr>
+         <td valign="top">
+          <label for="comments">Comments*</label>
+         </td>
+         <td valign="top">
+          <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+         </td>
+        </tr>
+        <tr>
+         <td colspan="2" style="text-align:center">
+          <input type="submit" value="Submit" class="pq">
+         </td>
+        </tr>
+        </table>
+        </form>
+    </div>
+  </div>
+</div>
+</div>
 		 <div class="clearfix"></div>
 		<div class="copy-right w3-agile"><p>&copy 2017 Karnataka Alp . All Rights Reserved | Design by <a href="www.goaldinaire.com  abc">Goal'dinaire</a></p></div>
 	 </div>
 </div>
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.1.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

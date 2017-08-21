@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="utf-8">
 <title>Karnataka Alp</title>
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<!-- css -->
+<link href="css/bootstrap.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" />
+<!-- Vendor Styles -->
+<link href="css/magnific-popup.css" rel="stylesheet"> 
+<!-- Block Styles -->
+<link href="css/gallery-1.css" rel="stylesheet">
 <link rel="stylesheet" href="style-2.css" type="text/css">
-<link rel="stylesheet" href="style.css" type="text/css">
+<link href="css/style.css" rel="stylesheet" />
 <script src="js/jquery.min.js"></script>
 <script src="js/responsiveslides.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,194 +25,211 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet"> 
  
-  <!-- webfonts --> 
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
-<body> 
-<div class="header agileits">
-	 <div class="container">
-	 <div class="logo">
-	 <a href="index.html"><img src="images/new.logo.png" alt=""/></a>
-	 <!-- <h3>KARNATAKA ALP</h3> -->
-	 </div>
-	 <div class="top-menu top">
-			<span class="menu"> </span>
-		 <ul>
-			  <li class="simptip-position-bottom simptip-movable" data-tooltip="Home"><a class="home home-pg" href="index.html"></a></li>
-		      <li class="simptip-position-bottom simptip-movable" data-tooltip="About"><a class="about" href="about.html"></a></li>
-			  <li class="active simptip-position-bottom simptip-movable" data-tooltip="Teams"><a class="service service-pg" href="team.html"></a></li>
-			  <li class=" simptip-position-bottom simptip-movable" data-tooltip="Gallery"><a class="gallery" href="gallery.html"></a></li>
-			  <li class=" simptip-position-bottom simptip-movable" data-tooltip="Contact"><a class="contact" href="contact.html"></a></li>
-			 <div class="clearfix"></div>
-		 </ul>
-				  <!--script-nav-->
-				 <script>
-				 $("span.menu").click(function(){
-				 $(".top-menu ul").slideToggle("slow" , function(){
-				 });
-				 });
-				 </script>
-				 <!--script-nav-->
-	 </div>
-	 <div class="clearfix"></div>
-	 </div>
-</div>
-<script>
-		$(document).ready(function () {
-		    size_li = $("#myList li").size();
-		    x=2;
-		    $('#myList li:lt('+x+')').show();
-		    $('#loadMore').click(function () {
-		        x= (x+1 <= size_li) ? x+1 : size_li;
-		        $('#myList li:lt('+x+')').show();
-		    });
-		    $('#showLess').click(function () {
-		        x=(x-1<0) ? 1 : x-1;
-		        $('#myList li').not(':lt('+x+')').hide();
-		    });
-		});
-	</script>
+<body>
 
-<div class="service-grids w3layouts">
-	 <div class="container">
-		 <h2>TEAMS</h2>
-		 <div class="service-grid">
-			 <div class="load_more">	
-				<ul id="myList">
-					<li><div class="l_g">
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t21.png" alt=""/>
-							 <h3><a href="#">Puneeth Rajkumar</a></h3>
-							 <!-- <p class="brand">brand ambassador.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t22.png" alt=""/>
-							 <h3><a href="#">Aindrita Ray</a></h3>
-							<!--  <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							<img src="images/t23.png" alt=""/>
-							 <h3><a href="#">Diganth Manchale</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="clearfix"></div>
-						 </div>
-					</li>
-					
-					<li><div class="l_g">
-						 <div class="col-md-4 service-sec">
-						 <!-- <h1>Team Players</h1> -->
-							<img src="images/t24.png" alt=""/>
-							 <h3><a href="#">Indrajit Lankesh</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t25.png" alt=""/>
-							 <h3><a href="#">Ravi Chetan</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t26.png" alt=""/>
-							 <h3><a href="#">Yogesh</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="clearfix"></div>
-						  </div>
-					</li>
-					
-					<li><div class="l_g">
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t27.png" alt=""/>
-							 <h3><a href="#">Karthik</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t28.png" alt=""/>
-							 <h3><a href="#">Jagadish</a></h3>
-							 <!-- <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p> -->
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t29.png" alt=""/>
-							 <h3><a href="#">Prajwal Devraj</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="clearfix"></div>
-						 </div>
-					</li>
-					
-					<li><div class="l_g">
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t30.png" alt=""/>
-							 <h3><a href="#">Arjun.U.A</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <!-- <div class="col-md-4 service-sec">
-							 <img src="images/s11.jpg" alt=""/>
-							 <h3><a href="#">Phasellus porta</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/s12.jpg" alt=""/>
-							 <h3><a href="#">Phasellus porta</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div> -->
-						 <div class="clearfix"></div>
-						 </div>
-					</li>
-					<li><div class="l_g">
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t27.png" alt=""/>
-							 <h3><a href="#">Kavitha Lankesh</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t28.png" alt=""/>
-							 <h3><a href="#">Disha Poovaiah</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t29.png" alt=""/>
-							 <h3><a href="#">Krishi Thapanda</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="clearfix"></div>
-						 </div>
-					</li>
-					<li>
-					<div class="l_g">
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t27.png" alt=""/>
-							 <h3><a href="#">Chandrika</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <!-- <div class="col-md-4 service-sec">
-							 <img src="images/t28.png" alt=""/>
-							 <h3><a href="#">Disha Poovaiah</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div>
-						 <div class="col-md-4 service-sec">
-							 <img src="images/t29.png" alt=""/>
-							 <h3><a href="#">Krishi Thapanda</a></h3>
-							 <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio.</p>
-						 </div> -->
-						 <div class="clearfix"></div>
-						 </div>
-					</li>
-					
-					
-				 </ul>
-				 <div id="loadMore">Load more</div>
-				 <div id="showLess">Show less</div>
-
-				 </div>
-			 </div>
-		 </div>
-	 </div>
+	<!-- start header -->
+    <div class="header agileits">
+     <div class="container">
+     <div class="logo">
+     <a href="index.html"><img src="images/new.logo.png" alt=""/></a>
+     <!-- <h3>KARNATAKA ALP</h3> -->
+     </div>
+     <div class="top-menu top">
+            <span class="menu"> </span>
+         <ul>
+              <li class="simptip-position-bottom simptip-movable" data-tooltip="Home"><a class="home home-pg" href="index.html"></a></li>
+              <li class="simptip-position-bottom simptip-movable" data-tooltip="About"><a class="about" href="about.html"></a></li>
+              <li class="active simptip-position-bottom simptip-movable" data-tooltip="Teams"><a class="service service-pg" href="team.html"></a></li>
+              <li class=" simptip-position-bottom simptip-movable" data-tooltip="Gallery"><a class="gallery" href="gallery.html"></a></li>
+              <li class=" simptip-position-bottom simptip-movable" data-tooltip="Testimonial"><a class="client" href="testimonial.html"></a></li>
+              <li class=" simptip-position-bottom simptip-movable" data-tooltip="Contact"><a class="contact" href="contact.html"></a></li>
+             <div class="clearfix"></div>
+         </ul>
+                  <!--script-nav-->
+                 <script>
+                 $("span.menu").click(function(){
+                 $(".top-menu ul").slideToggle("slow" , function(){
+                 });
+                 });
+                 </script>
+                 <!--script-nav-->
+     </div>
+     <div class="clearfix"></div>
+     </div>
 </div>
+		
+	<section id="inner-headline">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Teams</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+	<div class="container">
+	
+						
+	</div>
+	</section>	
+			  <!-- Start Gallery 1-2 -->
+    <section id="gallery-1" class="content-block section-wrapper gallery-1">
+    	 	<div class="container">
+
+			<div class="editContent glr">
+	            <ul class="filter">
+	                <li class="active"><a href="#" data-filter="*">All</a></li>
+	                <li><a href="#" data-filter=".artwork">Male</a></li>
+	                <li><a href="#" data-filter=".creative">Female</a></li>
+	                <!-- <li><a href="#" data-filter=".nature">Nature</a></li>
+	                <li><a href="#" data-filter=".outside">Outside</a></li>
+	                <li><a href="#" data-filter=".photography">Photography</a></li> -->
+	            </ul>
+			</div>
+            <!-- /.gallery-filter -->
+            
+            <div class="row">
+                <div id="isotope-gallery-container">
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper artwork">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic1.png" class="img-responsive" alt="1st gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic1.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                            	<div class="editContent">
+	                                <h5>Arjun.U.A</h5>
+                            	</div>
+                            	<!-- <div class="editContent">
+	                                <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                            	</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                   
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper photography artwork">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic2.png" class="img-responsive" alt="3rd gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic2.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                                <div class="editContent">
+                                    <h5>Ravi Chetan</h5>
+                                </div>
+                                <!-- <div class="editContent">
+                                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div><div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper photography creative">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic3.png" class="img-responsive" alt="3rd gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic3.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                                <div class="editContent">
+                                    <h5>Disha Poovaiah</h5>
+                                </div>
+                               <!--  <div class="editContent">
+                                    <p>Nullam id dolor id nibh ultricies vehicula.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper creative nature">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic7.png" class="img-responsive" alt="4th gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic4.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                            	<div class="editContent">
+                                	<h5>Kavitha Lankesh</h5>
+                            	</div>
+                            	<!-- <div class="editContent">
+                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
+                            	</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper creative">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic5.png" class="img-responsive" alt="5th gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic5.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                            	<div class="editContent">
+                                	<h5>Aindrita Ray</h5>
+                            	</div>
+                            	<!-- <div class="editContent">
+                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
+                            	</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.gallery-item-wrapper -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 gallery-item-wrapper  creative">
+                        <div class="gallery-item">
+                            <div class="gallery-thumb">
+                                <img src="images/pic6.png" class="img-responsive" alt="6th gallery Thumb">
+                                <div class="image-overlay"></div>
+                                <a href="images/pic6.png" class="gallery-zoom"><i class="fa icon-eye"></i></a>
+                                <a href="#" class="gallery-link"><i class="fa fa-link"></i></a>
+                            </div>
+                            <div class="gallery-details">
+                            	<div class="editContent">
+                                	<h5>Krishi Thapanda</h5>
+                            	</div>
+                            	<!-- <div class="editContent">
+                                	<p>Nullam id dolor id nibh ultricies vehicula.</p>
+                            	</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- /.isotope-gallery-container -->
+            </div>
+            <!-- /.row --> 
+        <!-- /.container -->
+		</div>
+    </section>
+    <!--// End Gallery 1-2 -->  
+	</div>
+	
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+
 <div class="fotter w3-agileits">
-	 <div class="container">
-		 <div class="col-md-3 ftr-logo">
-		 <a href="index.html"><img src="images/KarnatakaAl-wht.png" alt=""/></a>
-		 	 	  <nav class="site-nav">
+     <div class="container">
+         <div class="col-md-3 ftr-logo">
+         <a href="index.html"><img src="images/KarnatakaAl-wht.png" alt=""/></a>
+                  <nav class="site-nav">
     <div class="ham">
       <span></span>
       <span></span>
@@ -213,40 +240,57 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="team.html">Faculty</a></li>
       <li><a href="gallery.html">Program</a></li>
+      <li><a href="testimonial.html">Testimonial</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav><!--eo site-nav-->		
-		 </div>
-		 <div class="col-md-3 address">
-			 <h4>Address</h4>
-			 <ul class="address-info">
-			     <li><span></span></li>
-				 <li><p>No. 707, 1st Floor, MSZ Palacio, 1st Block, HRBR Layout, Kalyan Nagar. Bangalore: 560043</p>
-				 </li>
-			 </ul>
-			 <ul class="address-mail">
-				 <li><span></span></li>
-				 <li><p>Phone: 080-64542646 </p>
-				 <p>Email: <a href="info@karnataka-alps.com">Info@Karnataka-alps.com</a></p></li>
-			 </ul>
-		 </div>
-		 <div class="col-md-6 touch">
-			 <h4>Stay in Touch</h4>
-			 <div class="form">
-			 <form>
-				 <input type="text" value="" onfocus="this.value=''" onblur="this.value=''">
-				 <input type="submit" value="Sign up">
-			 </form>
-			 </div>
-			 <div class="social-icons agileits-w3layouts">
-				 <a href="https://www.facebook.com/KarnatakaAlpsOfficial/" target="blank"><span class="icon-facebook"> </span></a>
-				 <a href="https://www.youtube.com/channel/UC2__D9a13hm1S4jxviinYtg" target="blank"><span class="icon-youtube"> </span></a>
-				 <a href="https://www.instagram.com/karnatakaalps/" target="blank"><span class="icon-instagram"> </span></a>			 
-			 </div>
-		 </div>
-		 <div class="clearfix"></div>
-		<div class="copy-right w3-agile"><p>&copy 2017 Karnataka Alp . All Rights Reserved | Design by <a href="www.goaldinaire.com">Goal'dinaire</a></p></div>
-	 </div>
+  </nav><!--eo site-nav-->      
+         </div>
+         <div class="col-md-3 address">
+             <h4>Address</h4>
+             <ul class="address-info">
+                 <li><span></span></li>
+                 <li><p>No. 707, 1st Floor, MSZ Palacio, 1st Block, HRBR Layout, Kalyan Nagar. Bangalore: 560043</p>
+                 </li>
+             </ul>
+             <ul class="address-mail">
+                 <li><span></span></li>
+                 <li><p>Phone: 080-64542646 </p>
+                 <p>Email: <a href="info@karnataka-alps.com">Info@Karnataka-alps.com</a></p></li>
+             </ul>
+         </div>
+         <div class="col-md-6 touch">
+             <h4>Stay in Touch</h4>
+             <div class="form">
+             <form>
+                 <input type="text" value="" onfocus="this.value=''" onblur="this.value=''">
+                 <input type="submit" value="Sign up">
+             </form>
+             </div>
+             <div class="social-icons agileits-w3layouts">
+                 <a href="https://www.facebook.com/KarnatakaAlpsOfficial/" target="blank"><span class="icon-facebook"> </span></a>
+                 <a href="https://www.youtube.com/channel/UC2__D9a13hm1S4jxviinYtg" target="blank"><span class="icon-youtube"> </span></a>
+                 <a href="https://www.instagram.com/karnatakaalps/" target="blank"><span class="icon-instagram"> </span></a>             
+             </div>
+         </div>
+         <div class="clearfix"></div>
+        <div class="copy-right w3-agile"><p>&copy 2017 Karnataka Alp . All Rights Reserved | Design by <a href="www.goaldinaire.com">Goal'dinaire</a></p></div>
+     </div>
 </div>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script>
+ 
 </body>
 </html>
